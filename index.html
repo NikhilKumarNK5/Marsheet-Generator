@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Marksheet</title>
+		<link rel = "icon" href = "favicon.ico">
+		
+		<link rel="stylesheet" href="styles.css">
+
+		<script src="index.js" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div id="marks-input">
+			<h1 id="title">Marksheet Generator</h1>
+			Full Name:&nbsp;&nbsp;<input type="text" id="name"/><br/>
+			Roll No:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="rno"/><br/>
+			Subject 1 Name:&nbsp;&nbsp;<input type="text" id="sn1"/>&nbsp;&nbsp;
+			Subject 1 Marks:&nbsp;&nbsp;<input type="text" id="sm1"/><br/>
+			Subject 2 Name:&nbsp;&nbsp;<input type="text" id="sn2"/>&nbsp;&nbsp;
+			Subject 2 Marks:&nbsp;&nbsp;<input type="text" id="sm2"/><br/>
+			Subject 3 Name:&nbsp;&nbsp;<input type="text" id="sn3"/>&nbsp;&nbsp;
+			Subject 3 Marks:&nbsp;&nbsp;<input type="text" id="sm3"><br/>
+			Subject 4 Name:&nbsp;&nbsp;<input type="text" id="sn4"/>&nbsp;&nbsp;
+			Subject 4 Marks:&nbsp;&nbsp;<input type="text" id="sm4"/><br/>
+			Subject 5 Name:&nbsp;&nbsp;<input type="text" id="sn5"/>&nbsp;&nbsp;
+			Subject 5 Marks:&nbsp;&nbsp;<input type="text" id="sm5"/><br/>
+			
+			<input class = "btn" type="submit" value="Generate Marksheet" onClick="main()"/>
+		</div>
+		<div id="container">
+			<div class="heading"><h1>Marksheet</h1></div>
+			<table id="info">
+				<tr>
+					<th>Name</th>
+					<td id="namehere"></td>
+					<th>Roll Number</th>
+					<td id="rnohere"></td>
+				</tr>
+			</table>
+			
+			<br/><br/><br/><br/>
+			
+			<table id="marks">
+				<tr>
+					<th>Subject Name</th>
+					<th>Obtained Marks</th>
+					<th>Total Marks</th>
+				</tr>
+				<tr>
+					<td id="sn1here"></td>
+					<td id="sm1here"><td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td id="sn2here"></td>
+					<td id="sm2here"><td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td id="sn3here"></td>
+					<td id="sm3here"><td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td id="sn4here"></td>
+					<td id="sm4here"><td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td id="sn5here"></td>
+					<td id="sm5here"><td>
+					<td>100</td>
+				</tr>
+			<table>
+			<br><br><br>
+			
+			<table id="info">
+				<tr>
+					<th>Total Obtained Marks</th>
+					<td id="totalhere"></td>
+					<th>Percentage</th>
+					<td id="percentagehere"></td>
+					<th>Grade</th>
+					<td id="gradehere"></td>
+				</tr>
+			</table>
+		</div>
+
+		<script src="index.js" charset="utf-8"></script>
+	</body>
+</html>
